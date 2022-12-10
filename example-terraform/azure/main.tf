@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "my_vm" {
   resource_group_name = azurerm_resource_group.rg.name
   location            = "eastus"
 
-  size           = "Standard_B2s" # <<<<< Try changing this to Basic_A4 to compare the costs
+  size           = "Standard_NC24s_v3" # <<<<< Try changing this to Basic_A4 to compare the costs
   admin_username = "fakeuser"
   admin_password = "fakepass"
 
